@@ -34,16 +34,20 @@ This is a fully containerized Python backend project built with FastAPI for REST
 ## 📂 Project Structure
 ```
 ├── app/
-│ ├── main.py # FastAPI entrypoint
-│ ├── api/ # Route handlers
-│ ├── celery_tasks/ # Celery tasks
-│ ├── crud/ # DB access logic
-│ ├── db/ # DB init, models, session
-│ ├── schemas/ # Pydantic models
-│ └── worker.py # Celery worker starter
-├── alembic/ # DB migrations
+│   ├── main.py               # FastAPI entrypoint
+│   ├── api/                  # Route handlers
+│   ├── celery_tasks/         # Celery background tasks
+│   ├── crud/                 # DB access logic
+│   ├── db/                   # DB init, models, session
+│   ├── schemas/              # Pydantic schemas
+│   └── worker.py             # Celery worker bootstrap
+├── alembic/                  # DB migrations
+├── assets/
+│   └── architecture.png      # Architecture diagram
+├── design_decisions.md       # Technical design explanation
 ├── Dockerfile
 ├── docker-compose.yml
+├── .env                      # Environment variables (gitignored)
 ├── requirements.txt
 └── README.md
 ```
