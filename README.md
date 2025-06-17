@@ -32,7 +32,7 @@ This is a fully containerized Python backend project built with FastAPI for REST
 ---
 
 ## 📂 Project Structure
-.
+```
 ├── app/
 │ ├── main.py # FastAPI entrypoint
 │ ├── api/ # Route handlers
@@ -46,7 +46,7 @@ This is a fully containerized Python backend project built with FastAPI for REST
 ├── docker-compose.yml
 ├── requirements.txt
 └── README.md
-
+```
 ---
 ## 🧭 Architecture Diagram
 
